@@ -12,7 +12,7 @@ Here this tool, based on [pixivpy](https://github.com/upbit/pixivpy), can help y
 git clone https://github.com/BeautyYuYanli/pixiv-bookmarks-sync.git
 cd pixiv-bookmarks-sync
 ```
-2. Get your Pixiv `refresh_token`, see [this article](https://github.com/upbit/pixivpy)
+2. Get your Pixiv `refresh_token`, see [this article](https://gist.github.com/ZipFile/c9ebedb224406f4f11845ab700124362)
 3. Run `cp config_example.py config.py`, then edit `config.py` following the comments in it.
 4. For your first use, run `python main_first.py`, otherwise run `python main.py`
 5. Check your favorite illusts in the folder `download/imgs/`, with sort by "modified time", recommended.
