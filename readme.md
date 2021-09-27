@@ -14,8 +14,9 @@ cd pixiv-bookmarks-sync
 ```
 2. Get your Pixiv `refresh_token`, see [this article](https://gist.github.com/ZipFile/c9ebedb224406f4f11845ab700124362)
 3. Run `cp config_example.py config.py`, then edit `config.py` following the comments in it.
-4. For your first use, run `python main_first.py`, otherwise run `python main.py`
-5. Check your favorite illusts in the folder `download/imgs/`, with sort by "modified time", recommended.
+4. For your first use, run `python main_first.py`, to download all your bookmarks.
+5. Run `python main.py`, to download your recently added bookmarks.
+6. Check your favorite illusts in the folder `download/imgs/`, with sort by "modified time", recommended.
 
 ### Other
 
