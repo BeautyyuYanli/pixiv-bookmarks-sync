@@ -61,6 +61,8 @@ def appendDown():
 def download(i):
     # download result
     artname = re.sub(r'[\/\\:*?"<>|]', '', (i['title']+i['user']['name']))
+    if artname[0] == '.':
+        artname = '_' + artname
     if i['page_count'] == 1:
         url = i['meta_single_page']['original_image_url']
         api.download(url, path='./download/imgs', name=artname+os.path.basename(url))
