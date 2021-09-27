@@ -23,7 +23,7 @@ def initDown():
             json_result = api.user_bookmarks_illust(userid, max_bookmark_id=max_bookmark_id)
             tmp_result = []
             for i in json_result['illusts']:
-                tmp_result.insert(0, i)
+                tmp_result.append(i)
             result.insert(0, [x for x in tmp_result])
         except:
             break
