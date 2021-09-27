@@ -1,5 +1,4 @@
 __pycache__/
 download/imgs/*
 download/info/*
-result.json
 config.py

@@ -73,11 +73,15 @@ def download(i):
     print('done: ' + i['title'])
 
 def main():
+    if not os.path.exists('download'):
+        os.makedirs('download')
+    if not os.path.exists('download/imgs'):
+        os.makedirs('download/imgs')
+    if not os.path.exists('download/info'):
+        os.makedirs('download/info')
     if (login(refresh_token) == 1):
         # initDown()
         appendDown()
-    else:
-        print('login failed')
 
 if __name__ == '__main__':
     main()
