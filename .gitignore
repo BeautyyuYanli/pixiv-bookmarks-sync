@@ -2,3 +2,4 @@ __pycache__/
 download/imgs/*
 download/info/*
 config.py
+result.json
