@@ -39,7 +39,7 @@ def initDown():
         else:
             final_result.append(i)
     with open('result.json', 'w') as f:
-        f.write(json.dumps(final_result))
+        f.write(json.dumps([{'id': j['id']} for j in final_result]))
 
 def appendDown():
     json_result = api.user_bookmarks_illust(27956418)
@@ -56,7 +56,7 @@ def appendDown():
                 result.append(i)
                 # pass
     with open('result.json', 'w') as f:
-        f.write(json.dumps(result))
+        f.write(json.dumps([{'id': j['id']} for j in result]))
 
 def download(i):
     # download result
